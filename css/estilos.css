@@ -17,7 +17,7 @@ html{
     
 } */
 main{
-    background-image: url("/img/FONDO1v5.jpg");
+    background-image: url("../img/FONDO1v5.jpg");
     background-size:  cover;
     background-position: center; 
 }
