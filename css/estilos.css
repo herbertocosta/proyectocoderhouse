@@ -20,6 +20,11 @@ main{
     /* background-image: url("/img/FONDO1v5.jpg");
     background-size:  cover;
     background-position: center;  */
+    background: rgb(248,252,249);
+background: -moz-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
+background: -webkit-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
+background: linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
 }
 
 h1 {
@@ -202,11 +207,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endCo
     gap: 1rem;
     margin-bottom: 1rem;
     justify-content: center;
-    background: rgb(248,252,249);
+    /* background: rgb(248,252,249);
 background: -moz-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
 background: -webkit-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
 background: linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1); */
 }
 
 .cuerpo__foto{
