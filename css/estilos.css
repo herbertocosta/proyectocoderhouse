@@ -37,7 +37,7 @@ h1 {
 .header{
     color: #112A46;
     /* background-color:  #E76F51; */
-    background-image: url("/img/fondoHeader.jpg");
+    background-image: url("../img/fondoHeader.jpg");
     background-size: cover; 
     background-position: top; 
     margin: 0.5rem;
