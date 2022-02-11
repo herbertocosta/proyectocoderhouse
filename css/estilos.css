@@ -271,6 +271,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endCo
     transition: 1s;
 }
 
+fieldset{
+    min-width: 100%
+}
+
+textarea{
+    min-width: 100%
+}
+
 .barraLatDer{
     /* border: #E76F51 solid 1px; */
     padding: 0.5rem;
