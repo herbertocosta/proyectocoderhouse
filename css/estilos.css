@@ -217,7 +217,7 @@ textarea{
 }
 
 /*DISEÑO PIE DE PÁGINAS*/
-span{
+.container-fluid > span{
     border:#E76F51 solid 2px;
     border-radius: 15px;
     width: 100%;
@@ -252,6 +252,9 @@ fieldset{
     padding: .5rem;
 }
 
+.navbar-dark .navbar-toggler-icon{
+    background-color: #E76F51;
+}
 
 /*-----MEDIA QUIERY-----*/
 @media  (max-width: 425px){
