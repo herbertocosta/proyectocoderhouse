@@ -34,7 +34,7 @@ h1 {
     background-position: top; 
     padding: 0.4rem;
     position: sticky; 
-    top: 0.5rem;
+     top: 0; 
     border: #112A46 solid 1px; 
     border-radius: 15px;
     z-index: 9999;
