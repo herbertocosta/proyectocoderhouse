@@ -34,7 +34,7 @@ h1 {
     background-position: top; 
     padding: 0.4rem;
     position: sticky; 
-     top: 0; 
+    top: 0; 
     border: #112A46 solid 1px; 
     border-radius: 15px;
     z-index: 9999;
@@ -126,13 +126,6 @@ h1 {
     justify-content: center;
 }
 
-.barraLatIzq{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: .5rem;
-}
-
 .articulo{
     text-align: justify;
 }
@@ -140,14 +133,6 @@ h1 {
 .imgCarousel{
     height: 40vh;
     object-fit: cover;
-}
-
-.barraLatIzq article{
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-    text-align: justify;
-    padding: 0.5rem;
 }
 
 .imagen{
@@ -192,7 +177,8 @@ h1 {
 }
 
 fieldset{
-    min-width: 100%
+    min-width: 100%;
+    padding: 1rem;
 }
 
 textarea{
@@ -241,10 +227,6 @@ textarea{
     flex-direction: row;
     justify-content:  flex-end;
     gap: 0.8rem;
-}
-
-fieldset{
-    padding: 1rem;
 }
 
 #comentario{
