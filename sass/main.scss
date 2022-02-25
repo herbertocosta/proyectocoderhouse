@@ -1,159 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Chakra+Petch:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Chakra+Petch:wght@500&display=swap");
 
-*{
+/*VARIABLES*/
+$color-text: #112a46;
+$color-border: #e76f51;
+$font-gral: Verdana, Geneva, Tahoma, sans-serif;
+
+/*DISEÑO GENERAL*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #112A46;
+html {
+    font-family: $font-gral;
+    color: $color-text;
 }
 
-main{
-    background: rgb(248,252,249);
-    background: -moz-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
-    background: -webkit-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
-    background: linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
+main {
+    background: rgb(248, 252, 249);
+    background: -moz-linear-gradient(
+        142deg,
+        rgba(248, 252, 249, 1) 15%,
+        rgba(49, 156, 72, 1) 52%,
+        rgba(190, 24, 24, 1) 87%
+    );
+    background: -webkit-linear-gradient(
+        142deg,
+        rgba(248, 252, 249, 1) 15%,
+        rgba(49, 156, 72, 1) 52%,
+        rgba(190, 24, 24, 1) 87%
+    );
+    background: linear-gradient(
+        142deg,
+        rgba(248, 252, 249, 1) 15%,
+        rgba(49, 156, 72, 1) 52%,
+        rgba(190, 24, 24, 1) 87%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
-}
-
-h1 {
-    font-family: 'Aldrich', sans-serif;
-    font-size: 3rem;
 }
 
 /*DISEÑO HEADER DE LAS PÁGINAS*/
 
-.header{
-    color: #112A46;
+.header {
+    color: $color-text;
     background-image: url("../img/fondoHeader.jpg");
-    background-size: cover; 
-    background-position: top; 
+    background-size: cover;
+    background-position: top;
     padding: 0.4rem;
-    position: sticky; 
-     top: 0; 
-    border: #112A46 solid 1px; 
+    position: sticky;
+    top: 0;
+    border: $color-border solid 1px;
     border-radius: 15px;
     z-index: 9999;
-    &__logo > img{
-        width: 150px;
+    &__logo img {
+        width: 120px;
         object-fit: contain;
     }
-    &__nav{
-        background-color: #112A46;
-        padding: .2rem;
-        border: solid 1px #112a46;
-        border-radius: 5px;  
-        & a{
-            color: #E76F51;
+    &__titulos h1 {
+        font-family: "Aldrich", sans-serif;
+        font-size: 3rem;
+    }
+    &__titulos h2 {
+        font-family: "Aldrich", sans-serif;
+        font-size: 1.5rem;
+    }
+    &__nav {
+        background-color: $color-text;
+        padding: 0.2rem;
+        border: solid 1px $color-border;
+        border-radius: 5px;
+        & a {
+            color: $color-border !important;
             text-decoration: none;
             font-size: 1rem;
             text-align: center;
         }
-        & a:hover{
-            color: white;
+        & a:hover {
+            color: white !important;
             font-weight: bold;
         }
     }
-    
 }
 
 /* DISEÑO BARRA NAVEGACIÓN INTERIOR */
-.cuerpo{
+.cuerpo {
     margin: 0.8rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    border: #E76F51 solid 1px;
+    border: $color-border solid 1px;
     border-radius: 10px;
-    &__nav ul{
-        background-color: #112A46;
-        padding: .2rem;
+    &__nav ul {
+        background-color: $color-text;
+        padding: 0.2rem;
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: row;
         border: 1px solid;
         border-radius: 5px;
     }
-    &__nav li{
+    &__nav li {
         list-style: none;
         border: solid 1px white;
         border-radius: 5px;
-        padding: .3rem;
-        margin: .3rem;
+        padding: 0.3rem;
+        margin: 0.3rem;
     }
-    &__nav a{
-        color: #E76F51;
+    &__nav a {
+        color: $color-border;
         text-decoration: none;
-        font-size: .8rem;;
+        font-size: 0.8rem;
     }
-    &__nav a:hover{
+    &__nav a:hover {
         color: white;
         font-weight: bold;
     }
-    &__row{
+    &__row {
         margin: 0.8rem;
         padding: 0.5rem;
-        border: #E76F51 solid 1px;
+        border: $color-border solid 1px;
         border-radius: 15px;
         gap: 1rem;
         text-align: justify;
-        background: rgb(248,252,249);
-        background: -moz-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
-        background: -webkit-linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
-        background: linear-gradient(142deg, rgba(248,252,249,1) 15%, rgba(49,156,72,1) 52%, rgba(190,24,24,1) 87%);
+        background: rgb(248, 252, 249);
+        background: -moz-linear-gradient(
+            142deg,
+            rgba(248, 252, 249, 1) 15%,
+            rgba(49, 156, 72, 1) 52%,
+            rgba(190, 24, 24, 1) 87%
+        );
+        background: -webkit-linear-gradient(
+            142deg,
+            rgba(248, 252, 249, 1) 15%,
+            rgba(49, 156, 72, 1) 52%,
+            rgba(190, 24, 24, 1) 87%
+        );
+        background: linear-gradient(
+            142deg,
+            rgba(248, 252, 249, 1) 15%,
+            rgba(49, 156, 72, 1) 52%,
+            rgba(190, 24, 24, 1) 87%
+        );
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
     }
-    &__col{
+    &__col {
         display: flex;
         flex-direction: row;
         gap: 1rem;
         margin-bottom: 1rem;
         justify-content: center;
     }
-    &__foto{
+    &__foto {
         width: 100%;
-        border: #E76F51 solid 1px;
-        border-radius: 10px;
+        border: $color-border solid 1px;
+        border-radius: 10px 0;
     }
-    &__foto:hover{
-        transform: rotate(10deg); 
+    &__foto:hover {
+        transform: rotate(10deg);
         transition: 1s;
     }
-    
+    &__articulo {
+        text-align: justify;
+    }
 }
 
-.articulo{
-    text-align: justify;
-}
 
-.imgCarousel{
-    height: 40vh;
-    object-fit: cover;
-}
-
-.imagen{
+.imagen {
     width: 100%;
-    flex-basis: 20%; 
+    flex-basis: 20%;
     border: 1px solid #e76f51;
-    border-radius: 5px;
+    border-radius: 10px 0;
     object-fit: cover;
-    &:hover{
+    &:hover {
         backface-visibility: hidden;
         transform: scale(1.15, 1.15);
         opacity: 1;
         transition: 1s;
     }
-    &__nos{
+    &__slider {
+        height: 40vh;
+        object-fit: cover;
+    }
+    &__nos {
         height: 150px;
-        width: 150px; 
+        width: 150px;
         border: 1px solid #e76f51;
         border-radius: 50%;
         object-fit: cover;
-        &:hover{
+        &:hover {
             backface-visibility: hidden;
             transform: scale(1.5, 1.5);
             opacity: 1;
@@ -162,94 +198,87 @@ h1 {
     }
 }
 
-fieldset{
+fieldset {
     min-width: 100%;
     padding: 1rem;
 }
 
-textarea{
-    min-width: 100%
+textarea {
+    min-width: 100%;
 }
 
-.barraLatDer{
-    p{
+.barraLatDer {
+    p {
         text-align: center;
     }
-    img{
+    img {
         width: 100%;
     }
-    li{
+    li {
         list-style: none;
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
     }
 }
 
-
-.tarifa{
+.tarifa {
     text-align: center;
 }
 
 /*DISEÑO PIE DE PÁGINAS*/
-.container-fluid > span{
-    border:#E76F51 solid 2px;
-    border-radius: 15px;
-    width: 100%;
-    display: block;
-}
 
-.footer{
+.footer {
     margin: 0.8rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    p{
-        margin-right: .5rem;
+    span {
+        border: $color-border solid 2px;
+        border-radius: 15px;
+        width: 100%;
+        display: block;
+        margin-bottom: .3rem;
     }
-    ul{
+    p {
+        margin-right: 0.5rem;
+    }
+    ul {
         display: flex;
         flex-direction: row;
-        justify-content:  flex-end;
+        justify-content: flex-end;
         gap: 0.8rem;
     }
 }
 
-#comentario{
+#comentario {
     text-align: center;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
-.navbar-dark .navbar-toggler-icon{
-    background-color: #E76F51;
+.navbar-dark .navbar-toggler-icon {
+    background-color: $color-border;
 }
 
 /*-----MEDIA QUIERY-----*/
-@media  (max-width: 425px){
-    .header__logo > img{
+@media (max-width: 425px) {
+    .header__logo > img {
         width: 90px;
         object-fit: contain;
     }
-    .nav-link{
+    .nav-link {
         padding: 0;
     }
-    .footer ul{
-        justify-content:  space-evenly;
+    .footer ul {
+        justify-content: space-evenly;
     }
-    .footer p{
+    .footer p {
         text-align: center;
     }
-    .barraLatDer img{
+    .barraLatDer img {
         width: 70%;
     }
-    ul{
+    ul {
         padding-left: 0;
         text-align: center;
     }
 }
-
-
-
-
-
-
-
