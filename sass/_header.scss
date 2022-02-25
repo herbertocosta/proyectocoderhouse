@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Chakra+Petch:wght@500&display=swap");
+
+/*VARIABLES*/
+$color-text: #112a46;
+$color-border: #e76f51;
+$font-gral: Verdana, Geneva, Tahoma, sans-serif;
+$bordes-angulares:15px 0;
+
+/*DISEÑO GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-gral;
+    color: $color-text;
+}
+
+/*DISEÑO HEADER DE LAS PÁGINAS*/
+
+.header {
+    color: $color-text;
+    background-image: url("../img/fondoHeader.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 0.4rem;
+    position: sticky;
+    top: 0;
+    border: $color-border solid 1px;
+    border-radius: 15px;
+    z-index: 9999;
+    &__logo img {
+        width: 120px;
+        object-fit: contain;
+    }
+    &__titulos h1 {
+        font-family: "Aldrich", sans-serif;
+        font-size: 3rem;
+    }
+    &__titulos h2 {
+        font-family: "Aldrich", sans-serif;
+        font-size: 1.5rem;
+    }
+    &__nav {
+        background-color: $color-text;
+        /* padding: 0.2rem; */
+        border: solid 1px $color-border;
+        border-radius: 5px;
+        & a {
+            color: $color-border !important;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+        & a:hover {
+            color: white !important;
+            font-weight: bold;
+        }
+    }
+}

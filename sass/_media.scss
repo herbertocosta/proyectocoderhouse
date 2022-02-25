@@ -1,0 +1,23 @@
+/*-----MEDIA QUIERY-----*/
+@media (max-width: 425px) {
+    .header__logo > img {
+        width: 90px;
+        object-fit: contain;
+    }
+    .nav-link {
+        padding: 0;
+    }
+    .footer ul {
+        justify-content: space-evenly;
+    }
+    .footer p {
+        text-align: center;
+    }
+    .barraLatDer img {
+        width: 70%;
+    }
+    ul {
+        padding-left: 0;
+        text-align: center;
+    }
+}

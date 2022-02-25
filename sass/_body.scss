@@ -1,0 +1,158 @@
+/* DISEÑO BARRA NAVEGACIÓN INTERIOR */
+.cuerpo {
+    margin: 0.8rem;
+    padding: 0.5rem;
+    border: $color-border solid 1px;
+    border-radius: 10px;
+    gap: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    background: rgb(248, 252, 249);
+    background: -moz-linear-gradient(
+        142deg,
+        rgba(248, 252, 249, 1) 15%,
+        rgba(49, 156, 72, 1) 52%,
+        rgba(190, 24, 24, 1) 87%
+    );
+    background: -webkit-linear-gradient(
+        142deg,
+        rgba(248, 252, 249, 1) 15%,
+        rgba(49, 156, 72, 1) 52%,
+        rgba(190, 24, 24, 1) 87%
+    );
+    background: linear-gradient(
+        142deg,
+        rgba(248, 252, 249, 1) 15%,
+        rgba(49, 156, 72, 1) 52%,
+        rgba(190, 24, 24, 1) 87%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
+    &__nav ul {
+        background-color: $color-text;
+        padding: 0.2rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    &__nav li {
+        list-style: none;
+        border: solid 1px white;
+        border-radius: 5px;
+        padding: 0.3rem;
+        margin: 0.3rem;
+    }
+    &__nav a {
+        color: $color-border;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    &__nav a:hover {
+        color: white;
+        font-weight: bold;
+    }
+    /* &__row {
+        margin: 0.8rem;
+        padding: 0.5rem;
+        border: $color-border solid 1px;
+        border-radius: 15px;
+        gap: 1rem;
+        text-align: justify;
+        background: rgb(248, 252, 249);
+        background: -moz-linear-gradient(
+            142deg,
+            rgba(248, 252, 249, 1) 15%,
+            rgba(49, 156, 72, 1) 52%,
+            rgba(190, 24, 24, 1) 87%
+        );
+        background: -webkit-linear-gradient(
+            142deg,
+            rgba(248, 252, 249, 1) 15%,
+            rgba(49, 156, 72, 1) 52%,
+            rgba(190, 24, 24, 1) 87%
+        );
+        background: linear-gradient(
+            142deg,
+            rgba(248, 252, 249, 1) 15%,
+            rgba(49, 156, 72, 1) 52%,
+            rgba(190, 24, 24, 1) 87%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
+    } */
+    &__col {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+    &__foto {
+        width: 100%;
+        border: $color-border solid 1px;
+        border-radius: 10px 0;
+    }
+    &__foto:hover {
+        transform: rotate(10deg);
+        transition: 1s;
+    }
+    &__articulo {
+        text-align: justify;
+    }
+}
+
+
+.imagen {
+    width: 100%;
+    flex-basis: 20%;
+    border: 1px solid #e76f51;
+    border-radius: 10px 0;
+    object-fit: cover;
+    &:hover {
+        backface-visibility: hidden;
+        transform: scale(1.15, 1.15);
+        opacity: 1;
+        transition: 1s;
+    }
+    &__slider {
+        height: 40vh;
+        object-fit: cover;
+    }
+    &__nos {
+        height: 150px;
+        width: 150px;
+        border: 1px solid #e76f51;
+        border-radius: 50%;
+        object-fit: cover;
+        &:hover {
+            backface-visibility: hidden;
+            transform: scale(1.5, 1.5);
+            opacity: 1;
+            transition: 1s;
+        }
+    }
+}
+
+.formulario{
+    textarea {
+        min-width: 100%;
+    }
+}
+
+.barraLatDer {
+    p {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 0.7rem;
+    }
+}
+
+.tarifa {
+    text-align: center;
+}
