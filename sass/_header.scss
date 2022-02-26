@@ -6,6 +6,9 @@ $color-text: #112a46;
 $color-border: #e76f51;
 $font-gral: Verdana, Geneva, Tahoma, sans-serif;
 $bordes-angulares:15px 0;
+$percent-degree:.6;
+$width-img:120px;
+$font-size:4rem;
 
 /*DISEÑO GENERAL*/
 * {
@@ -32,17 +35,16 @@ html {
     border: $color-border solid 1px;
     border-radius: 15px;
     z-index: 9999;
+    font-family: "Aldrich", sans-serif;
     &__logo img {
-        width: 120px;
+        width: $width-img;
         object-fit: contain;
     }
     &__titulos h1 {
-        font-family: "Aldrich", sans-serif;
-        font-size: 3rem;
+        font-size: $font-size;
     }
     &__titulos h2 {
-        font-family: "Aldrich", sans-serif;
-        font-size: 1.5rem;
+        font-size: $font-size*.5;
     }
     &__nav {
         background-color: $color-text;

@@ -135,6 +135,32 @@
 }
 
 .formulario{
+    .boton {
+        width:200px;
+        height:50px;
+        background-color:white;
+        text-align:center;
+        color:black;
+        border-radius:20px;
+        border:1px solid $color-border;
+    }
+
+    .boton__aceptar{
+        @extend .boton;
+        background-color:green;
+        font-weight: bold
+    }
+
+    .boton__cancelar{
+        @extend .boton;
+        background-color:red;
+        font-weight: bold
+    }
+
+    .boton:hover{
+            color: white;
+            font-weight: bold;
+    }
     textarea {
         min-width: 100%;
     }

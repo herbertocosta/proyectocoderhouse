@@ -1,9 +1,22 @@
 /*-----MEDIA QUIERY-----*/
 @media (max-width: 425px) {
-    .header__logo > img {
-        width: 90px;
-        object-fit: contain;
+    .header{
+        font-family: "Aldrich", sans-serif;
+        &__logo {
+            text-align: center !important;
+        }
+        &__logo  img{
+            width: $width-img*$percent-degree;
+            object-fit: contain;
+        }
+        &__titulos h1 {
+            font-size: $font-size*.8;
+        }
+        &__titulos h2 {
+            font-size: $font-size*.4;
+        }
     }
+
     .nav-link {
         padding: 0;
     }
