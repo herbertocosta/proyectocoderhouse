@@ -1,7 +1,8 @@
 /* DISEÑO BARRA NAVEGACIÓN INTERIOR */
 .cuerpo {
-    margin: 0.8rem;
-    padding: 0.5rem;
+    @include padding-margin(0.5rem, 0.8rem);
+    /* margin: 0.8rem;
+    padding: 0.5rem; */
     border: $color-borde;
     border-radius: map-get($bordes-radio, rad1010);
     gap: 1rem;
@@ -30,8 +31,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
     &__nav ul {
         background-color: $color-text;
-        padding: 0.2rem;
-        margin-bottom: 1.5rem;
+         @include padding-margin(0.2rem, 1rem);
+        /* padding: 0.2rem;
+        margin-bottom: 1.5rem; */
         display: flex;
         flex-direction: row;
         border: $color-borde;
@@ -41,8 +43,9 @@
         list-style: none;
         border: solid 1px white;
         border-radius: map-get($bordes-radio, rad0505);
-        padding: 0.3rem;
-        margin: 0.3rem;
+         @include padding-margin(0.3rem, 0.3rem);
+        /* padding: 0.3rem;
+        margin: 0.3rem; */
     }
     &__nav a {
         color: $color-borde;
@@ -54,6 +57,7 @@
         font-weight: bold;
     }
     /* &__row {
+        
         margin: 0.8rem;
         padding: 0.5rem;
         border: $color-borde

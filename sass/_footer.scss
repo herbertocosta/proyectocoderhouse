@@ -1,8 +1,9 @@
 /*DISEÑO PIE DE PÁGINAS*/
 
 .footer {
-    margin: 0.8rem;
-    padding: 0.5rem;
+     @include padding-margin(0.5rem, 0.8rem);
+    /* margin: 0.8rem;
+    padding: 0.5rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +27,8 @@
 
 #comentario {
     text-align: center;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+     @include padding-margin(0.5rem, 0rem);
 }
 
 .navbar-dark .navbar-toggler-icon {

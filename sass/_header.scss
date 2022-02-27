@@ -18,12 +18,17 @@ $bordes-radio: (
     rad5050: 50%
 );
 
+@mixin padding-margin($padsize, $margsize) {
+    padding: $padsize;
+    margin: $margsize;
+}
 
 
 /*DISEÑO GENERAL*/
 * {
-    margin: 0;
-    padding: 0;
+     @include padding-margin(0rem, 0rem);
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
@@ -39,7 +44,8 @@ html {
     background-image: url("../img/fondoHeader.jpg");
     background-size: cover;
     background-position: top;
-    padding: 0.4rem;
+     @include padding-margin(0.4rem, 0rem);
+    /* padding: 0.4rem; */
     position: sticky;
     top: 0;
     border: $color-borde;
@@ -58,7 +64,8 @@ html {
     }
     &__nav {
         background-color: $color-text;
-        /* padding: 0.2rem; */
+        @include padding-margin(0rem, 0rem); 
+        /* padding: 0rem;  */
         border: $color-borde;
         border-radius: map-get($bordes-radio, rad0505);
         & a {
