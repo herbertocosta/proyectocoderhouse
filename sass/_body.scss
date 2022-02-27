@@ -2,8 +2,8 @@
 .cuerpo {
     margin: 0.8rem;
     padding: 0.5rem;
-    border: $color-border solid 1px;
-    border-radius: 10px;
+    border: $color-borde;
+    border-radius: map-get($bordes-radio, rad1010);
     gap: 1rem;
     text-align: justify;
     display: flex;
@@ -34,18 +34,18 @@
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: row;
-        border: 1px solid;
-        border-radius: 5px;
+        border: $color-borde;
+        border-radius: map-get($bordes-radio, rad0505);
     }
     &__nav li {
         list-style: none;
         border: solid 1px white;
-        border-radius: 5px;
+        border-radius: map-get($bordes-radio, rad0505);
         padding: 0.3rem;
         margin: 0.3rem;
     }
     &__nav a {
-        color: $color-border;
+        color: $color-borde;
         text-decoration: none;
         font-size: 0.8rem;
     }
@@ -56,8 +56,8 @@
     /* &__row {
         margin: 0.8rem;
         padding: 0.5rem;
-        border: $color-border solid 1px;
-        border-radius: 15px;
+        border: $color-borde
+        border-radius: map-get($bordes-radio, rad1515);;
         gap: 1rem;
         text-align: justify;
         background: rgb(248, 252, 249);
@@ -90,8 +90,8 @@
     }
     &__foto {
         width: 100%;
-        border: $color-border solid 1px;
-        border-radius: 10px 0;
+        border: $color-borde;
+       border-radius: map-get($bordes-radio, rad1000);
     }
     &__foto:hover {
         transform: rotate(10deg);
@@ -107,7 +107,7 @@
     width: 100%;
     flex-basis: 20%;
     border: 1px solid #e76f51;
-    border-radius: 10px 0;
+   border-radius: map-get($bordes-radio, rad1000);
     object-fit: cover;
     &:hover {
         backface-visibility: hidden;
@@ -141,8 +141,8 @@
         background-color:white;
         text-align:center;
         color:black;
-        border-radius:20px;
-        border:1px solid $color-border;
+       border-radius: map-get($bordes-radio, rad2020);
+        border:1px solid $color-borde;
     }
 
     .boton__aceptar{

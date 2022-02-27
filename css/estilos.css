@@ -64,7 +64,7 @@ h1 {
     background-color: #112a46;
     padding: 0.2rem;
     border: solid 1px #112a46;
-    border-radius: 5px;
+    border-radius: map-get($bordes-radio, rad0505);
 }
 
 .header__nav a {
@@ -88,13 +88,13 @@ h1 {
     display: flex;
     flex-direction: row;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: map-get($bordes-radio, rad0505);
 }
 
 .cuerpo__nav li {
     list-style: none;
     border: solid 1px white;
-    border-radius: 5px;
+    border-radius: map-get($bordes-radio, rad0505);
     padding: 0.3rem;
     margin: 0.3rem;
 }
@@ -116,7 +116,7 @@ h1 {
     display: flex;
     flex-direction: column;
     border: #e76f51 solid 1px;
-    border-radius: 10px;
+    border-radius: map-get($bordes-radio, rad1010);
 }
 
 .cuerpo__row {
@@ -169,7 +169,7 @@ h1 {
     width: 100%;
     flex-basis: 20%;
     border: 1px solid #e76f51;
-    border-radius: 5px;
+    border-radius: map-get($bordes-radio, rad0505);
     object-fit: cover;
 }
 
@@ -198,7 +198,7 @@ h1 {
 .cuerpo__foto {
     width: 100%;
     border: #e76f51 solid 1px;
-    border-radius: 10px;
+    border-radius: map-get($bordes-radio, rad1010);
 }
 
 .cuerpo__foto:hover {

@@ -3,12 +3,22 @@
 
 /*VARIABLES*/
 $color-text: #112a46;
-$color-border: #e76f51;
+$color-borde: #e76f51 solid 1px;
 $font-gral: Verdana, Geneva, Tahoma, sans-serif;
 $bordes-angulares:15px 0;
 $percent-degree:.6;
 $width-img:120px;
 $font-size:4rem;
+$bordes-radio: (
+    rad0505: 5px,
+    rad1000: 10px 0px,
+    rad1010: 10px,
+    rad1515: 15px,
+    rad2020: 20px,
+    rad5050: 50%
+);
+
+
 
 /*DISEÑO GENERAL*/
 * {
@@ -32,8 +42,8 @@ html {
     padding: 0.4rem;
     position: sticky;
     top: 0;
-    border: $color-border solid 1px;
-    border-radius: 15px;
+    border: $color-borde;
+    border-radius: map-get($bordes-radio, rad1515);
     z-index: 9999;
     font-family: "Aldrich", sans-serif;
     &__logo img {
@@ -49,10 +59,10 @@ html {
     &__nav {
         background-color: $color-text;
         /* padding: 0.2rem; */
-        border: solid 1px $color-border;
-        border-radius: 5px;
+        border: $color-borde;
+        border-radius: map-get($bordes-radio, rad0505);
         & a {
-            color: $color-border !important;
+            color: $color-borde !important;
             text-decoration: none;
             font-size: 1rem;
             text-align: center;
