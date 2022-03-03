@@ -45,7 +45,6 @@ html {
     background-size: cover;
     background-position: top;
      @include padding-margin(0.4rem, 0rem);
-    /* padding: 0.4rem; */
     position: sticky;
     top: 0;
     border: $color-borde;
@@ -65,7 +64,6 @@ html {
     &__nav {
         background-color: $color-text;
         @include padding-margin(0rem, 0rem); 
-        /* padding: 0rem;  */
         border: $color-borde;
         border-radius: map-get($bordes-radio, rad0505);
         & a {

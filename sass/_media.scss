@@ -19,7 +19,6 @@
 
     .nav-link {
          @include padding-margin(0rem, 0rem);
-        /* padding: 0rem; */
     }
     .footer ul {
         justify-content: space-evenly;
@@ -32,7 +31,6 @@
     }
     ul {
          @include padding-margin(0rem, 0rem);
-        /* padding-left: 0; */
         text-align: center;
     }
 }

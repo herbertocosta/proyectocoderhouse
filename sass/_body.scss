@@ -1,8 +1,6 @@
 /* DISEÑO BARRA NAVEGACIÓN INTERIOR */
 .cuerpo {
     @include padding-margin(0.5rem, 0.8rem);
-    /* margin: 0.8rem;
-    padding: 0.5rem; */
     border: $color-borde;
     border-radius: map-get($bordes-radio, rad1010);
     gap: 1rem;
@@ -32,8 +30,6 @@
     &__nav ul {
         background-color: $color-text;
          @include padding-margin(0.2rem, 1rem);
-        /* padding: 0.2rem;
-        margin-bottom: 1.5rem; */
         display: flex;
         flex-direction: row;
         border: $color-borde;
@@ -44,8 +40,6 @@
         border: solid 1px white;
         border-radius: map-get($bordes-radio, rad0505);
          @include padding-margin(0.3rem, 0.3rem);
-        /* padding: 0.3rem;
-        margin: 0.3rem; */
     }
     &__nav a {
         color: $color-borde;
@@ -56,35 +50,7 @@
         color: white;
         font-weight: bold;
     }
-    /* &__row {
-        
-        margin: 0.8rem;
-        padding: 0.5rem;
-        border: $color-borde
-        border-radius: map-get($bordes-radio, rad1515);;
-        gap: 1rem;
-        text-align: justify;
-        background: rgb(248, 252, 249);
-        background: -moz-linear-gradient(
-            142deg,
-            rgba(248, 252, 249, 1) 15%,
-            rgba(49, 156, 72, 1) 52%,
-            rgba(190, 24, 24, 1) 87%
-        );
-        background: -webkit-linear-gradient(
-            142deg,
-            rgba(248, 252, 249, 1) 15%,
-            rgba(49, 156, 72, 1) 52%,
-            rgba(190, 24, 24, 1) 87%
-        );
-        background: linear-gradient(
-            142deg,
-            rgba(248, 252, 249, 1) 15%,
-            rgba(49, 156, 72, 1) 52%,
-            rgba(190, 24, 24, 1) 87%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
-    } */
+
     &__col {
         display: flex;
         flex-direction: row;
