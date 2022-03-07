@@ -77,7 +77,7 @@
     width: 100%;
     flex-basis: 20%;
     border: 1px solid #e76f51;
-   border-radius: map-get($bordes-radio, rad1000);
+    border-radius: map-get($bordes-radio, rad1000);
     object-fit: cover;
     &:hover {
         backface-visibility: hidden;
