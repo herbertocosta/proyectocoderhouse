@@ -1,8 +1,7 @@
 /* DISEÑO BARRA NAVEGACIÓN INTERIOR */
 .cuerpo {
     font-family: $font-gral;
-    font-size: $font-size*.4;
-    font-style: italic;
+    font-size: $font-size*.7;
     @include padding-margin(0.5rem, 0.8rem);
     border: $color-borde;
     border-radius: map-get($bordes-radio, rad1010);
