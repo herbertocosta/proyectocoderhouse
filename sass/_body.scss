@@ -1,4 +1,8 @@
 /* DISEÑO BARRA NAVEGACIÓN INTERIOR */
+body{
+  background: rgb(36,0,0);
+background: linear-gradient(133deg, rgba(36,0,0,0.9976365546218487) 0%, rgba(221,11,11,1) 0%, rgba(193,244,205,0.896796218487395) 21%);
+}
 .cuerpo {
     font-family: $font-gral;
     font-size: $font-size*.5;
@@ -9,7 +13,8 @@
     text-align: justify;
     display: flex;
     flex-direction: column;
-    background: rgb(248, 252, 249);
+    
+    /* background: rgb(248, 252, 249);
     background: -moz-linear-gradient(
         142deg,
         rgba(248, 252, 249, 1) 15%,
@@ -28,7 +33,7 @@
         rgba(49, 156, 72, 1) 52%,
         rgba(190, 24, 24, 1) 87%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fcf9",endColorstr="#be1818",GradientType=1); */
     &__nav ul {
         background-color: $color-text;
          @include padding-margin(0.2rem, 1rem);
